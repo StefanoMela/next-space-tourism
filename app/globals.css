@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color tokens */
+  --ds-color-background: #0b0d17;
+  --ds-color-subheading: #d0d6f9;
+  --ds-color-heading: #ffffff;
+
+  /* Font family tokens */
+  --ds-font-base: "Barlow", sans-serif;
+  --ds-font-heading-5: "Barlow Condensed", sans-serif;
+  --ds-font-subheading: "Barlow Condensed", sans-serif;
+  --ds-font-nav-text: "Barlow Condensed", sans-serif;
+
+  /* Typography scale tokens */
+  --ds-type-h1-size: 150px;
+  --ds-type-h2-size: 100px;
+  --ds-type-h3-size: 56px;
+  --ds-type-h4-size: 32px;
+  --ds-type-h5-size: 28px;
+  --ds-type-h5-tracking: 4.75px;
+  --ds-type-subheading-main-size: 28px;
+  --ds-type-subheading-secondary-size: 14px;
+  --ds-type-subheading-secondary-tracking: 2.35px;
+  --ds-type-nav-text-size: 16px;
+  --ds-type-nav-text-tracking: 2.7px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Theme colors */
+  --color-background: var(--ds-color-background);
+  --color-subheading: var(--ds-color-subheading);
+  --color-heading: var(--ds-color-heading);
+
+  /* Theme fonts */
+  --font-base: var(--ds-font-base);
+  --font-h5: var(--ds-font-heading-5);
+  --font-subheading: var(--ds-font-subheading);
+  --font-nav-text: var(--ds-font-nav-text);
+
+  /* Theme typography */
+  --text-h1: var(--ds-type-h1-size);
+  --text-h2: var(--ds-type-h2-size);
+  --text-h3: var(--ds-type-h3-size);
+  --text-h4: var(--ds-type-h4-size);
+  --text-h5: var(--ds-type-h5-size);
+  --tracking-h5: var(--ds-type-h5-tracking);
+  --text-subheading-main: var(--ds-type-subheading-main-size);
+  --text-subheading-secondary: var(--ds-type-subheading-secondary-size);
+  --tracking-subheading-secondary: var(--ds-type-subheading-secondary-tracking);
+  --text-nav: var(--ds-type-nav-text-size);
+  --tracking-nav: var(--ds-type-nav-text-tracking);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --ds-color-background: #0b0d17;
+    --ds-color-subheading: #d0d6f9;
+    --ds-color-heading: #ffffff;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ds-color-background);
+  color: var(--ds-color-heading);
+  font-family: var(--ds-font-base);
 }
