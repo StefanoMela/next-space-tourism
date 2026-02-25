@@ -7,10 +7,11 @@
   --ds-color-heading: #ffffff;
 
   /* Font family tokens */
-  --ds-font-base: "Barlow", sans-serif;
-  --ds-font-heading-5: "Barlow Condensed", sans-serif;
-  --ds-font-subheading: "Barlow Condensed", sans-serif;
-  --ds-font-nav-text: "Barlow Condensed", sans-serif;
+  --ds-font-base: var(--font-barlow);
+  --ds-font-heading-5: var(--font-barlow-condensed);
+  --ds-font-subheading: var(--font-barlow-condensed);
+  --ds-font-nav-text: var(--font-barlow-condensed);
+
 
   /* Typography scale tokens */
   --ds-type-h1-size: 150px;
