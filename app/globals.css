@@ -8,49 +8,60 @@
 
   /* Font family tokens */
   --ds-font-base: var(--font-barlow);
-  --ds-font-heading-5: var(--font-barlow-condensed);
-  --ds-font-subheading: var(--font-barlow-condensed);
-  --ds-font-nav-text: var(--font-barlow-condensed);
-
+  --ds-font-heading: var(--font-bellefair);
+  --ds-font-condensed: var(--font-barlow-condensed);
 
   /* Typography scale tokens */
   --ds-type-h1-size: 150px;
   --ds-type-h2-size: 100px;
+  --ds-type-h1-mobile-size: 80px;
   --ds-type-h3-size: 56px;
   --ds-type-h4-size: 32px;
   --ds-type-h5-size: 28px;
+  --ds-type-h5-tablet-size: 20px;
   --ds-type-h5-tracking: 4.75px;
-  --ds-type-subheading-main-size: 28px;
-  --ds-type-subheading-secondary-size: 14px;
-  --ds-type-subheading-secondary-tracking: 2.35px;
-  --ds-type-nav-text-size: 16px;
-  --ds-type-nav-text-tracking: 2.7px;
+  --ds-type-subheading-1-size: 28px;
+  --ds-type-subheading-2-size: 14px;
+  --ds-type-subheading-2-tracking: 2.35px;
+  --ds-type-nav-size: 16px;
+  --ds-type-nav-tracking: 2.7px;
+  --ds-type-cta-size: 20px;
+  --ds-type-cta-tracking: 1.25px;
+  --ds-type-body-size: 15px;
+  --ds-type-body-tablet-size: 16px;
+  --ds-type-body-desktop-size: 18px;
 }
 
 @theme inline {
   /* Theme colors */
-  --color-background: var(--ds-color-background);
-  --color-subheading: var(--ds-color-subheading);
-  --color-heading: var(--ds-color-heading);
+  --color-clr-background: var(--ds-color-background);
+  --color-clr-subheading: var(--ds-color-subheading);
+  --color-clr-heading: var(--ds-color-heading);
 
   /* Theme fonts */
   --font-base: var(--ds-font-base);
-  --font-h5: var(--ds-font-heading-5);
-  --font-subheading: var(--ds-font-subheading);
-  --font-nav-text: var(--ds-font-nav-text);
+  --font-heading: var(--ds-font-heading);
+  --font-condensed: var(--ds-font-condensed);
 
   /* Theme typography */
   --text-h1: var(--ds-type-h1-size);
   --text-h2: var(--ds-type-h2-size);
+  --text-h1-mobile: var(--ds-type-h1-mobile-size);
   --text-h3: var(--ds-type-h3-size);
   --text-h4: var(--ds-type-h4-size);
   --text-h5: var(--ds-type-h5-size);
   --tracking-h5: var(--ds-type-h5-tracking);
-  --text-subheading-main: var(--ds-type-subheading-main-size);
-  --text-subheading-secondary: var(--ds-type-subheading-secondary-size);
-  --tracking-subheading-secondary: var(--ds-type-subheading-secondary-tracking);
-  --text-nav: var(--ds-type-nav-text-size);
-  --tracking-nav: var(--ds-type-nav-text-tracking);
+  --text-subheading-1: var(--ds-type-subheading-1-size);
+  --text-subheading-2: var(--ds-type-subheading-2-size);
+  --tracking-subheading-2: var(--ds-type-subheading-2-tracking);
+  --text-nav: var(--ds-type-nav-size);
+  --tracking-nav: var(--ds-type-nav-tracking);
+  --text-cta: var(--ds-type-cta-size);
+  --tracking-cta: var(--ds-type-cta-tracking);
+  --text-body: var(--ds-type-body-size);
+  --text-body-tablet: var(--ds-type-body-tablet-size);
+  --text-body-desktop: var(--ds-type-body-desktop-size);
+  --text-h5-tablet: var(--ds-type-h5-tablet-size);
 }
 
 @media (prefers-color-scheme: dark) {
