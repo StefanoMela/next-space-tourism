@@ -30,6 +30,8 @@
   --ds-type-body-size: 15px;
   --ds-type-body-tablet-size: 16px;
   --ds-type-body-desktop-size: 18px;
+  --ds-type-cta-desktop-size: 32px;
+  --ds-type-cta-desktop-tracking: 2px;
 }
 
 @theme inline {
@@ -62,6 +64,8 @@
   --text-body-tablet: var(--ds-type-body-tablet-size);
   --text-body-desktop: var(--ds-type-body-desktop-size);
   --text-h5-tablet: var(--ds-type-h5-tablet-size);
+  --text-cta-desktop: var(--ds-type-cta-desktop-size);
+  --tracking-cta-desktop: var(--ds-type-cta-desktop-tracking);
 }
 
 @media (prefers-color-scheme: dark) {
